@@ -5,34 +5,32 @@ import javax.inject.Inject
 
 class MovieDomainMapperImpl @Inject constructor() : MovieMapper<MovieDetailResponse, MovieDetailEntity> {
     override fun map(input: MovieDetailResponse?): MovieDetailEntity{
-        return input?.let {
-            MovieDetailEntity(
-                 actors = it.actors,
-                 awards = it.awards,
-                 boxOffice = it.boxOffice,
-                 country = it.country,
-                 dVD = it.dVD,
-                 director = it.director,
-                 genre = it.genre,
-                 imdbID = it.imdbID,
-                 imdbRating = it.imdbRating,
-                 imdbVotes = it.imdbVotes,
-                 language = it.language,
-                 metascore = it.metascore,
-                 plot = it.plot,
-                 poster = it.poster,
-                 production = it.production,
-                 rated = it.rated,
-                 ratings = it.ratings,
-                 released = it.released,
-                 response = it.response,
-                 runtime = it.runtime,
-                 title = it.title,
-                 type = it.type,
-                 website = it.website,
-                 writer = it.writer,
-                 year = it.year
+        return MovieDetailEntity(
+                 actors = input?.actors.orEmpty(),
+                 awards = input?.awards.orEmpty(),
+                 boxOffice = input?.boxOffice.orEmpty(),
+                 country = input?.country.orEmpty(),
+                 dVD = input?.dVD.orEmpty(),
+                 director = input?.director.orEmpty(),
+                 genre = input?.genre.orEmpty(),
+                 imdbID = input?.imdbID.orEmpty(),
+                 imdbRating = input?.imdbRating.orEmpty(),
+                 imdbVotes = input?.imdbVotes.orEmpty(),
+                 language = input?.language.orEmpty(),
+                 metascore = input?.metascore.orEmpty(),
+                 plot = input?.plot.orEmpty(),
+                 poster = input?.poster.orEmpty(),
+                 production = input?.production.orEmpty(),
+                 rated = input?.rated.orEmpty(),
+                 ratings = input?.ratings.orEmpty(),
+                 released = input?.released.orEmpty(),
+                 response = input?.response.orEmpty(),
+                 runtime = input?.runtime.orEmpty(),
+                 title = input?.title.orEmpty(),
+                 type = input?.type.orEmpty(),
+                 website = input?.website.orEmpty(),
+                 writer = input?.writer.orEmpty(),
+                 year = input?.year.orEmpty()
             )
-        }?: MovieDetailEntity("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", emptyList(), "", "", "", "", "", "", "", "")
     }
 }
