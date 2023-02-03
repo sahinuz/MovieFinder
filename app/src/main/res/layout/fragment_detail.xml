@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment"
+    android:padding="30dp"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/goBack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/arrow_back_ios"
+
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        tools:src="@tools:sample/avatars"
+
+        />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Director: "
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="532dp"
+            android:layout_marginRight="10dp"
+
+            android:fontFamily="@font/poppins_bold"
+            />
+
+        <TextView
+            android:id="@+id/movieDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="director"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="532dp"
+            android:layout_marginRight="10dp"
+
+            android:fontFamily="@font/poppins_bold"
+            />
+
+        <TextView
+            android:id="@+id/movieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="2014"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre: "
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp"
+                android:layout_marginRight="10dp"
+
+                android:fontFamily="@font/poppins_bold"
+                />
+
+            <TextView
+                android:id="@+id/movieGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="drama"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp"
+                android:layout_marginRight="10dp"
+
+                android:fontFamily="@font/poppins_bold"
+                />
+
+            <TextView
+                android:id="@+id/movieRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="7.0"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/grade"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plot: "
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp"
+                android:layout_marginRight="10dp"
+
+                android:fontFamily="@font/poppins_bold"
+                />
+
+            <TextView
+                android:id="@+id/moviePlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Plot"
+                android:textSize="17sp"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="532dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

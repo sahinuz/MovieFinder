@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_input_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/poppins_medium"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Movie Name"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movie_list_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/adapter_movie_item"
+        app:spanCount="1"
+        />
+
+
+</LinearLayout>
